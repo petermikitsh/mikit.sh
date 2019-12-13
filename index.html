@@ -8,46 +8,64 @@
       rel="stylesheet"
     />
     <style>
+      body {
+        font-family: "Crimson Text", Garamond, serif;
+      }
+
       .block {
         display: block;
       }
 
-      body {
-        font-family: "Crimson Text", Garamond, serif;
-        margin: 0 20px;
+      @media screen {
+        body {
+          margin: 0 20px;
+        }
+
+        h1 {
+          font-size: 1.75em;
+        }
+
+        h2 {
+          font-size: 1.15em;
+        }
+
+        h3 {
+          font-size: 1.1em;
+        }
       }
 
-      h1 {
-        font-size: 1.75em;
+      @media only screen and (min-width: 700px) {
+        body {
+          max-width: 700px;
+        }
       }
 
-      h2 {
-        font-size: 1.15em;
+      @media only screen and (min-width: 740px) {
+        body {
+          margin: 0 auto;
+        }
       }
 
       @media print {
+        @page {
+          size: auto;
+          margin: 0mm;
+        }
+
+        body {
+          padding: 10mm 10mm 0;
+        }
+
+        h1 {
+          margin: 0 0 10px;
+        }
+
         h2 {
           margin: 10px 0;
         }
 
         p {
           margin: 10px 0;
-        }
-      }
-
-      h3 {
-        font-size: 1.1em;
-      }
-
-      @media (min-width: 700px) {
-        body {
-          max-width: 700px;
-        }
-      }
-
-      @media (min-width: 740px) {
-        body {
-          margin: 0 auto;
         }
       }
     </style>
