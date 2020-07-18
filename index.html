@@ -1,151 +1,165 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Peter Mikitsh</title>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Crimson+Text"
-      rel="stylesheet"
-    />
-    <style>
+
+<head>
+  <title>Peter Mikitsh</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'Computer Modern';
+      src: url('cmunrm.ttf');
+    }
+
+    @font-face {
+      font-family: 'Computer Modern Bold';
+      src: url('cmunrb.ttf');
+    }
+
+    html,
+    body {
+      font-family: "Computer Modern", Garamond, serif;
+      /* box-sizing: border-box; */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Computer Modern Bold", Garamond, serif;
+    }
+
+    .block {
+      display: block;
+    }
+
+    @media screen {
       body {
-        font-family: "Crimson Text", Garamond, serif;
+        margin: 0 20px;
       }
 
-      .block {
-        display: block;
+      h1 {
+        font-size: 1.75em;
       }
 
-      @media screen {
-        body {
-          margin: 0 20px;
-        }
-
-        h1 {
-          font-size: 1.75em;
-        }
-
-        h2 {
-          font-size: 1.15em;
-        }
-
-        h3 {
-          font-size: 1.1em;
-        }
+      h2 {
+        font-size: 1.15em;
       }
 
-      @media only screen and (min-width: 700px) {
-        body {
-          max-width: 700px;
-        }
+      h3 {
+        font-size: 1.1em;
+      }
+    }
+
+    @media only screen and (min-width: 700px) {
+      body {
+        max-width: 700px;
+      }
+    }
+
+    @media only screen and (min-width: 740px) {
+      body {
+        margin: 0 auto;
+      }
+    }
+
+    @media print {
+      @page {
+        size: auto;
+        margin: 0mm;
       }
 
-      @media only screen and (min-width: 740px) {
-        body {
-          margin: 0 auto;
-        }
+      html,
+      body {
+        font-size: 14.5px;
       }
 
-      @media print {
-        @page {
-          size: auto;
-          margin: 0mm;
-        }
-
-        body {
-          padding: 10mm 10mm 0;
-        }
-
-        h1 {
-          margin: 0 0 10px;
-        }
-
-        h2 {
-          margin: 10px 0;
-        }
-
-        p {
-          margin: 10px 0;
-        }
+      body {
+        padding: 10mm 10mm 0;
       }
-    </style>
-  </head>
-  <body>
-    <h1>Peter Mikitsh</h1>
-    <div>
-      <a class="block" href="https://www.linkedin.com/in/petermikitsh"
-        >https://www.linkedin.com/in/petermikitsh</a
-      >
-      <a class="block" href="https://github.com/petermikitsh"
-        >https://github.com/petermikitsh</a
-      >
-      <a href="mailto:peter@-----.sh">peter@-----.sh</a>
-    </div>
 
-    <h2>Summary</h2>
-    <p>
-      Full-stack software engineer specializing in front-end technologies.
-      Passionate for creating enterprise-grade experiences with a focus on
-      usability, accessibility, and performance.
-    </p>
+      h1 {
+        margin: 0 0 10px;
+      }
 
-    <h2>Education</h2>
-    <p>Rochester Institute of Technology, B.Sc. Software Engineering</p>
+      h2 {
+        margin: 10px 0;
+      }
 
-    <h2>Languages, Frameworks, Tools & Skills</h2>
-    <p>
-      JavaScript (ES5 / ES6), React, Node.js, HTML, CSS, Git, Testing (Unit /
-      Integration / Visual), Webpack, Babel
-    </p>
+      p {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
 
-    <h2>Open Source Projects</h2>
-    <p>
-      material-react-components: An set of reusable, cross-browser and
-      accessibility tested, react components that implement Google’s Material
-      Design user interface (with responsive design):
-      <a href="https://github.com/collegepulse/material-react-components"
-        >https://github.com/collegepulse/material-react-components</a
-      >
-    </p>
-    <p>
-      Snow.js: A CLI tool with 100+ stars on GitHub for rapidly deploying Docker
-      services to Kubernetes clusters. Learn more at
-      <a href="https://github.com/snowjs/cli">https://github.com/snowjs/cli</a>
-    </p>
+<body>
+  <h1>Peter Mikitsh</h1>
+  <div>
+    <a class="block" href="https://www.linkedin.com/in/petermikitsh">https://www.linkedin.com/in/petermikitsh</a>
+    <a class="block" href="https://github.com/petermikitsh">https://github.com/petermikitsh</a>
+    <a class="block" href="mailto:peter@-----.sh">peter@-----.sh</a>
+  </div>
 
-    <h2>Experience</h2>
+  <h2>Summary</h2>
+  <p>
+    Full-stack software engineer specializing in front-end technologies. Passionate for creating enterprise-grade
+    experiences with a focus on usability, accessibility, and performance.
+  </p>
 
-    <h3>Zuora, Software Engineer — San Diego, CA — 01/2019 to Present</h3>
-    <ul>
-      <li>
-        Design, implement, test, deploy, and monitor front end web applications
-        for Zuora's platform using TypeScript, React, Jest, and Angular.
-      </li>
-      <li>
-        Author, prototype, and present architectural whitepapers to colleagues,
-        software engineering leadership, and system architects, illustrating
-        concepts for enhancing flexibility and developer productivity for
-        Zuora's front end architecture.
-      </li>
-      <li>
-        Collaborate cross-functionally with engineering directors, system
-        architects, product managers, and UI/UX Designers to deliver
-        applications that solve relevant business problems.
-      </li>
-    </ul>
+  <h2>Education</h2>
+  <p>Rochester Institute of Technology, B.Sc. Software Engineering</p>
 
-    <h3>Intuit Inc., Software Engineer — San Diego, CA — 08/2015 to 01/2019</h3>
-    <ul>
-      <li>
-        Design, implement, and test functionality for Fuego, TurboTax’s
-        cross-platform metadata-driven user experience rendering engine using
-        React.
-      </li>
-      <li>
-        Work in a cross-functional team environment with product owners and
-        visual designers to formalize software requirements and translate visual
-        designs into user experiences.
-      </li>
-    </ul>
-  </body>
+  <h2>Languages, Frameworks, Tools & Skills</h2>
+  <p>
+    JavaScript / TypeScript, React, Node.js, HTML, CSS, Git, Testing (Unit / Integration / Visual), Webpack, Babel
+  </p>
+
+  <h2>Open Source Projects</h2>
+  <p>
+    material-react-components: An set of reusable, cross-browser and accessibility tested, react components that
+    implement Google’s Material Design user interface (with responsive
+    design):
+    <a
+      href="https://github.com/collegepulse/material-react-components">https://github.com/collegepulse/material-react-components</a>
+  </p>
+  <p>
+    Snow.js: A CLI tool with 100+ stars on GitHub for rapidly deploying Docker services to Kubernetes clusters. Learn
+    more at <a href="https://github.com/snowjs/cli">https://github.com/snowjs/cli</a>
+  </p>
+
+  <h2>Experience</h2>
+
+  <h3>Zuora, Software Engineer — San Diego, CA — 01/2019 to Present</h3>
+  <ul>
+    <li>
+      Design, implement, test, deploy, and monitor front end web applications for Zuora's platform using TypeScript,
+      React, Jest, and Angular.
+    </li>
+    <li>
+      Author, prototype, and present architectural whitepapers to colleagues, software engineering leadership, and
+      system architects, illustrating concepts for enhancing flexibility and developer productivity for Zuora's front
+      end architecture.
+    </li>
+    <li>
+      Collaborate cross-functionally with engineering directors, system architects, product managers, and UI/UX
+      Designers to deliver applications that solve relevant business problems.
+    </li>
+  </ul>
+
+  <h3>Intuit Inc., Software Engineer — San Diego, CA — 08/2015 to 01/2019</h3>
+  <ul>
+    <li>
+      Design, implement, and test functionality for Fuego, TurboTax’s cross-platform metadata-driven user experience
+      rendering engine using React.
+    </li>
+    <li>
+      Work in a cross-functional team environment with product owners and visual designers to formalize software
+      requirements and translate visual designs into user experiences.
+    </li>
+  </ul>
+</body>
+
 </html>
